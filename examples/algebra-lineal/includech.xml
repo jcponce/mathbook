@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="groups" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Another title</title>
+
+<section xml:id="section-textual2">
+            <title>Just Some Text</title>
+
+            <p>Now a single paragraph inside a titled section of the article.</p>
+            <p>Let me see if this thing works. <m>\int_0^1 \frac{1}{x}\, dx</m></p>
+        </section>
+
+        <section xml:id="section-interesting2">
+            <title>A Bit More Interesting</title>
+
+            <p>The previous section (<xref ref="section-textual" />) was a bit boring.</p>
+
+            <p>This paragraph has some inline math, a Diophantine equation, <m>x^2 + \doubler{y^2} = z^2</m>.  And some display math about infinite series: <me>\sum_{n=1}^\infty\,\frac{1}{n^2} = \frac{\pi^2}{6}.</me>  Look at the XML source to see how <latex /> macros are employed universally across all possible output formats.</p>
+        </section>
+
+        <section xml:id="section-computation2">
+            <title>Computation</title>
+
+            <p>The following is a chunk of Sage code.  Your output format will dictate what you see next.  In print, you will see expected output.  In HTML you will have an executable, and editable, Sage Cell to work with.  In a SageMathCloud worksheet, you will be able to execute and edit the code with all the other features of SageMathCloud.  Note that if you include the expected output in your source, then you can test the example to verify that the behavior of Sage has not changed.</p> 
+
+            <sage>
+                <input>
+                A = matrix(4,5, srange(20))
+                A.rref()
+                </input>
+                <output>
+                [ 1  0 -1 -2 -3]
+                [ 0  1  2  3  4]
+                [ 0  0  0  0  0]
+                [ 0  0  0  0  0]
+                </output>
+            </sage>
+        </section>
+
+        </chapter>
