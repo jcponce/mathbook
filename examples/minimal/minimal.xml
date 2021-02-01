@@ -75,6 +75,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <title>Just Some Text</title>
 
             <p>Now a single paragraph inside a titled section of the article.</p>
+            <p>Let me see if this thing works. <m>\int_0^1 \frac{1}{x}\, dx</m></p>
         </section>
 
         <section xml:id="section-interesting">
@@ -104,11 +105,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </sage>
         </section>
 
-        <part xml:id="part-algebra">
-            <title>Algebra</title>
-            <xi:include href="groups.xml" />                  <!-- Groups -->
-            <xi:include href="cyclic.xml" />                  <!-- Cyclic Groups -->
-        </part>
+       
 
     </article>
 
